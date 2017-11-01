@@ -6,10 +6,10 @@ import pytest
 test_arguments = ["argument0_value0", "argument0_value1", "argument0_value2"]
 
 
-class XYZList(CLITest):
+class TestXYZ(CLITest):
 
     def setup_method(self, method):
-        super(XYZList, self).setup_method(method)
+        super(TestXYZ, self).setup_method(method)
         self.cli.register("xyz", XYZControl, "TEST")
         self.args += ["xyz"]
     
