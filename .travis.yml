@@ -1,5 +1,8 @@
 language: python
 
+env:
+  - PLUGIN=example
+
 virtualenv:
   system_site_packages: true
 
